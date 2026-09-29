@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#2563eb" />
+<meta name="color-scheme" content="light" />
+<meta name="description" content="Aguid@Help — Marketplace de serviços de limpeza profissional: residencial, comercial e pós-obra." />
+<title>Aguid@Help · Limpeza profissional</title>
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="stylesheet" href="css/app.css?v=6" />
+</head>
+<body>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <!-- Cabeçalho fixo -->
+  <header class="topbar" id="topbar" hidden>
+    <button class="icon-btn" id="btnMenu" aria-label="Abrir menu" hidden></button>
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="" class="brand-logo" />
+      <div>
+        <h1>Aguid<span>@Help</span></h1>
+        <p id="topbarSub">Limpeza profissional</p>
+      </div>
+    </div>
+    <div class="topbar-right" id="topbarRight"></div>
+  </header>
+
+  <!-- Área de conteúdo (as telas são renderizadas aqui) -->
+  <main id="app" class="app" tabindex="-1"></main>
+
+  <!-- Navegação inferior (mobile) -->
+  <nav class="tabbar" id="tabbar" hidden aria-label="Navegação principal"></nav>
+
+  <!-- Overlay de menu lateral (mobile) / agendamento / chat -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Menu lateral" hidden></aside>
+
+  <!-- Modal genérico -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" id="modalBox" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <!-- Confirmação genérica -->
+  <div class="modal-backdrop" id="confirmBackdrop" hidden>
+    <div class="modal modal-sm" id="confirmBox" role="alertdialog"></div>
+  </div>
+
+  <script src="js/database.js?v=6"></script>
+  <script src="js/seed.js?v=6"></script>
+  <script src="js/ui.js?v=6"></script>
+  <script src="js/views-comuns.js?v=6"></script>
+  <script src="js/views-cliente.js?v=6"></script>
+  <script src="js/views-profissional.js?v=6"></script>
+  <script src="js/views-admin.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
+</body>
+</html>

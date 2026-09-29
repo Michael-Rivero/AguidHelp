@@ -1,0 +1,6 @@
+# Arquivos operacionais do notebook (nao fazem parte do site)
+server.ps1
+iniciar-servidor.ps1
+*.bat
+*.cmd
+cloudflared.exe
